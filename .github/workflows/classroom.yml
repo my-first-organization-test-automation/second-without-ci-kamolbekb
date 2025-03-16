@@ -1,0 +1,25 @@
+name: Run Tests
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x' # Ensure your project is actually using .NET 8
+
+      - name: Restore dependencies
+        run: dotnet restore CompleteMethodAdd.sln
+
+      - name: Build project
+        run: dotnet build CompleteMethodAdd.sln --no-restore --configuration Release
+
+      - name: Run tests
+        run: dotnet test CompleteMethodAdd.sln --no-build --configuration Release --verbosity normal
