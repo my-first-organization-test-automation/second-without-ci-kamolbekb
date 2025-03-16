@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "+f2T6e5gX8I=",
+  "dgSpecHash": "mi8qPz/AUCg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\PracticeFolder\\ClassRoom\\CompleteMethodAdd\\CompleteMethodAdd\\AddNumbersTask.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/kamolshermatov096/Documents/Projects/second-without-ci-kamolbekb/CompleteMethodAdd/AddNumbersTask.csproj",
+  "expectedPackageFiles": [
+    "/Users/kamolshermatov096/.nuget/packages/microsoft.netcore.app.ref/8.0.11/microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
+    "/Users/kamolshermatov096/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.11/microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512",
+    "/Users/kamolshermatov096/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.11/microsoft.netcore.app.host.osx-arm64.8.0.11.nupkg.sha512"
+  ],
   "logs": []
 }

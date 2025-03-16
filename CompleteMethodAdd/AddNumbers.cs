@@ -11,6 +11,6 @@ public class AddNumbers
     public static int Add(int a, int b)
     {
         // TODO: Implement this method
-        return 0;
+        return a+b;
     }
 }
