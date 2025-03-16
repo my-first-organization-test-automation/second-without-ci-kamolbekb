@@ -23,3 +23,15 @@ jobs:
 
       - name: Run tests
         run: dotnet test CompleteMethodAdd.sln --no-build --configuration Release --verbosity normal
+        
+      - name: Check Protected Files
+        run: |
+          git fetch origin main
+          CHANGED_FILES=$(git diff --name-only origin/main)
+          PROTECTED_FILES=".github/workflows/classroom.yml"
+          for file in $PROTECTED_FILES; do
+            if echo "$CHANGED_FILES" | grep -q "$file"; then
+              echo "Error: Protected file $file has been modified!"
+              exit 1
+            fi
+          done
